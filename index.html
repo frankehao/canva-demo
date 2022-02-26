@@ -63,50 +63,5 @@
         }
       }
     </script>
-
-    <!-- <canvas id="canvas" width="100" height="100"></canvas>
-<script>
-  let canvas = document.getElementById("canvas");
-  canvas.height = document.documentElement.clientHeight
-  canvas.width = document.documentElement.clientWidth
-  let ctx = canvas.getContext("2d");
-
-
-  var isTouchDevice = 'ontouchstart' in
-  document.documentElement;
-
-  let painting = false
-  ctx.fillStyle = "black";
-  ctx.strokeStyle = 'none'
-
-  if (isTouchDevice) {
-      canvas.ontouchmove = (e) => {
-      let x = e.toucher[0].clientX
-      let y = e.toucher[0].clientY
-      ctx.beginPath();
-      ctx.arc(x, y, 5, 0, 2 * Math.PI);
-      ctx.stroke();
-      ctx.fill();
-
-      }
-  }else {
-
-  
-  canvas.onmousedown = () => {
-    painting = true
-  }
-  canvas.onmouseup = () => {
-    painting = false
-  }
-  canvas.onmousemove = (e) => {
-    if (painting === true) {
-      ctx.beginPath();
-      ctx.arc(e.clientX, e.clientY, 5, 0, 2 * Math.PI);
-      ctx.stroke();    
-      ctx.fill();
-    }
-  }
-  }
-</script> -->
   </body>
 </html>
